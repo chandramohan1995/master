@@ -9,7 +9,7 @@ var stream = T.stream('user');
 stream.on('follow',function(userfollowed){
    var name = userfollowed.source.name;
    var id = userfollowed.source.screen_name;
-    tweetit('.@'+name+' thanks for following,,see ya ');
+    tweetit('@'+name+' thanks for following,,see ya ');
 });
 
 
