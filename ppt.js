@@ -4,7 +4,7 @@ var pptx = new PptxGenJS();
 // Simple Slide
 function doDemo() {
 	var slide = pptx.addNewSlide();
-	canvas = document.getElementsBYTagname("canvas")
+	canvas = document.getElementsBYTagname("canvas")[0]
     var img = canvas.toDataURL("image/png")
    let boxHeight = 0.7, boxWidth = 0.7, paddingV = 0, paddingH = 0;
 //draw a box of specified dimension
