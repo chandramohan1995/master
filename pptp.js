@@ -15,12 +15,12 @@ function doDemo() {
    if (sampleImage.height >= sampleImage.width) {
   // if height is more we need to shrink the width to fit the box
    newImgWidth = (sampleImage.width * boxHeight) / sampleImage.height;
-   paddingH = (0.7 - newWidth) * 0.5;
+   paddingH = (0.7 - newImgWidth) * 0.5;
  }
  else {
   // if width is more we need to shrink the height to fit the box
-  newImgHeight = (sampleImage.height * boxWidth) / sampleImage.width; paddingV = (0.7 - imageHeight) * 0.5;
+  newImgHeight = (sampleImage.height * boxWidth) / sampleImage.width; paddingV = (0.7 - boxHeight) * 0.5;
 }
-slide.addImage({ data: `image/png;base64,img}`, x: 0.5 + paddingH, y: 0.5 + paddingV, w: newImgWidth, h: newHeight });
+slide.addImage({ data: `image/png;base64,img}`, x: 0.5 + paddingH, y: 0.5 + paddingV, w: newImgWidth, h: newImgHeight });
 pptx.save();
 }
