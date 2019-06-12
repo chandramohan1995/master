@@ -5,7 +5,7 @@ var pptx = new PptxGenJS();
 function doDemo() {
 	var slide = pptx.addNewSlide();
 	canvas = document.getElementsByTagName("canvas")[0];
-    var img = canvas.toDataURL("image/png");
+    var img = canvas.toDataURL();
    let boxHeight = 0.7, boxWidth = 0.7, paddingV = 0, paddingH = 0;
 //draw a box of specified dimension
    slide.addShape(pptx.shapes.RECTANGLE, { x: 0.5, y: 0.5, w: 0.7, h: 0.7, line: 'BEB5AF' });
