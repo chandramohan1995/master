@@ -2,7 +2,7 @@ var pptx = new PptxGenJS();
 //$('#ver').html('<h5>'+pptx.version+'</h5>');
 
 // Simple Slide
-window.doDemo = function do7cells() {
+function doDemo() {
 	var slide = pptx.addNewSlide();
 	canvas = document.getElementsBYTagname("canvas")
     var img = canvas.toDataURL("image/png")
